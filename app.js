@@ -35,7 +35,7 @@ feeder.add({
 
 
 //  0 HORAS - SÓ NA SEXTA
-cron.schedule('* * * * *', () => {
+cron.schedule('1 0 * * FRI', () => {
     client.emit('bossTimer', [2, 3])
 });
 
