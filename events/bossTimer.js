@@ -8,7 +8,7 @@ module.exports = async (client, data) => {
     guilds.forEach(element => {
         let channel = client.channels.fetch(element.channel).then(channel => {
             try {
-                channel.send({
+                channel.send('@everyone', {
                     
                     embed: {
                         footer:{
@@ -35,10 +35,7 @@ module.exports = async (client, data) => {
             } catch (error) {
                 console.log(`Não consegui enviar a mensagem no canal ${channel.name} no servidor ${element.name}`)
             }
-        
         })
-
-    
     });
    
 }

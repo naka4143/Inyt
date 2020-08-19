@@ -1,5 +1,5 @@
 const patchNoteModel= require("../models/patchNote")
-module.exports =
+module.exports = 
 {
   run: async (client, message, args) => {
     if (!message.member.hasPermission(module.exports.conf.permission)) {
