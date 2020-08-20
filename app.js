@@ -117,7 +117,7 @@ cron.schedule('45 17 * * FRI', () => {
 });
 
 // 20 HORAS
-cron.schedule('45 19 * * MON', () => {
+cron.schedule('15 23 * * MON', () => {
     client.emit('bossTimer', [3, 1])
 });
 cron.schedule('45 19 * * TUE', () => {
@@ -141,24 +141,22 @@ cron.schedule('45 19 * * SUN', () => {
 
 
 // 23 HORAS
-cron.schedule('45 19 * * MON', () => {
+cron.schedule('15 23 * * MON', () => {
     client.emit('bossTimer', [7])
 });
-cron.schedule('45 19 * * TUE', () => {
+cron.schedule('15 23 * * TUE', () => {
     client.emit('bossTimer', [8])
 });
-cron.schedule('45 19 * * WED', () => {
+cron.schedule('15 23 * * WED', () => {
     client.emit('bossTimer', [7])
 });
-cron.schedule('45 19 * * FRI', () => {
+cron.schedule('15 23 * * FRI', () => {
     client.emit('bossTimer', [7])
 });
 
-cron.schedule('45 19 * * SUN', () => {
+cron.schedule('15 23 * * SUN', () => {
     client.emit('bossTimer', [8])
 });
-
-
 
 
 
